@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yanhao Feng</title>
+<meta name="description" content="Yanhao Feng. MA in Statistics, Columbia University. Machine learning for clinical prediction and medical imaging.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a5fb4'/%3E%3Ctext x='32' y='42' font-family='Arial,Helvetica,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EYF%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --card: #f6f8fa;
+    --text: #1f2328;
+    --muted: #5d646d;
+    --rule: #e3e6ea;
+    --accent: #1a5fb4;
+    --tag-bg: #e8f0fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181c;
+      --card: #1d2127;
+      --text: #e6e8eb;
+      --muted: #9aa3ad;
+      --rule: #2b3037;
+      --accent: #79aef2;
+      --tag-bg: #1f2b3b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 72px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  p { margin: 0 0 12px; }
+
+  /* header */
+  header { display: flex; gap: 28px; align-items: center; margin-bottom: 8px; }
+  header .intro { flex: 1; min-width: 0; }
+  h1 { font-size: 2.1rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .role { color: var(--muted); margin: 0 0 12px; }
+  .links { margin: 0; }
+  .links a, .links span { white-space: nowrap; }
+  .links .sep { color: var(--muted); margin: 0 8px; }
+  .photo {
+    width: 150px; height: 150px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0; background: var(--card);
+  }
+  @media (max-width: 560px) {
+    header { flex-direction: column-reverse; align-items: flex-start; gap: 18px; }
+    .photo { width: 120px; height: 120px; }
+  }
+
+  /* sections */
+  section { margin-top: 48px; }
+  h2 {
+    font-size: 1.25rem; margin: 0 0 18px;
+    padding-left: 12px; border-left: 4px solid var(--accent);
+    line-height: 1.3;
+  }
+
+  /* research cards */
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 16px 18px;
+  }
+  .card h3 { font-size: 1.02rem; margin: 0 0 4px; }
+  .card .with { color: var(--muted); font-size: 0.88rem; margin: 0 0 8px; }
+  .card p:last-child { margin: 0; font-size: 0.95rem; }
+
+  /* publications */
+  .pub { padding: 14px 0; border-top: 1px solid var(--rule); }
+  .pub:last-child { border-bottom: 1px solid var(--rule); }
+  .pub .title { font-weight: 600; margin-bottom: 4px; }
+  .pub .authors { font-size: 0.93rem; margin-bottom: 2px; }
+  .pub .venue { color: var(--muted); font-size: 0.93rem; }
+  .tag {
+    display: inline-block; font-size: 0.78rem; font-weight: 600;
+    padding: 1px 8px; margin-left: 6px; border-radius: 999px;
+    background: var(--tag-bg); color: var(--accent);
+  }
+  .tag:hover { text-decoration: none; filter: brightness(0.95); }
+
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div class="intro">
+      <h1>Yanhao Feng</h1>
+      <p class="role">MA in Statistics, Columbia University</p>
+      <p class="links">
+        <a href="mailto:yf2684@columbia.edu">yf2684@columbia.edu</a><span class="sep">/</span><a href="https://github.com/yfeng3212">GitHub</a>
+        <span class="sep">/</span><a href="https://www.linkedin.com/in/yanhao-feng-848846228">LinkedIn</a>
+        <!-- <span class="sep">/</span><a href="cv.pdf">CV</a> -->
+      </p>
+    </div>
+    <!-- <img class="photo" src="photo.jpg" alt="Yanhao Feng"> -->
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I work on machine learning for clinical prediction and medical imaging. I am interested in how the way data are collected and selected shapes what a model learns, and what that means when a model is used somewhere new.</p>
+    <p>I am applying to PhD programs for Fall 2027.</p>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Pouch endoscopy images</h3>
+        <p class="with">with Prof. Xiaofu He and Dr. Bo Shen, Columbia University</p>
+        <p>Detecting neoplasia in endoscopic images of the ileal pouch in patients with inflammatory bowel disease.</p>
+      </div>
+      <div class="card">
+        <h3>Clinical trials in opioid use disorder</h3>
+        <p class="with">with Prof. Sean X. Luo, Columbia University</p>
+        <p>Prediction models for treatment retention, and how such models should be updated when they move to a new clinic.</p>
+      </div>
+      <div class="card">
+        <h3>Pathology foundation models</h3>
+        <p class="with">with Prof. Xuexin Li, China Medical University</p>
+        <p>How pathology foundation models behave on frozen sections prepared during surgery.</p>
+      </div>
+      <div class="card">
+        <h3>Synthetic training data</h3>
+        <p class="with">with Prof. Pengtao Xie, UC San Diego</p>
+        <p>How filtering training data written by large language models changes what a model learns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications and presentations</h2>
+
+    <div class="pub">
+      <div class="title">Two-stage Transfer Learning Framework for Endoscopic Evaluation of the Ileal Pouch in Inflammatory Bowel Disease: A Pilot Study</div>
+      <div class="authors">Shanshan Wang, <strong>Yanhao Feng</strong>, Yujie Li, Ruoxuan Li, Huaibin Mabel Ko, Ravi Pokala Kiran, Xiaofu He, Bo Shen</div>
+      <div class="venue"><em>Gastroenterology</em> 170(6) Suppl, 2026. DDW 2026 poster.
+        <a class="tag" href="https://doi.org/10.1016/S0016-5085(26)03191-4">DOI</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Can LLMs Understand Social Norms in Autonomous Driving Games?</div>
+      <div class="authors">Boxuan Wang, Haonan Duan, <strong>Yanhao Feng</strong> (equal contribution), Xu Chen, Yongjie Fu, Zhaobin Mo, Xuan Di</div>
+      <div class="venue"><em>IEEE IAVVC</em> 2024. Oral presentation.
+        <a class="tag" href="https://arxiv.org/abs/2408.12680">arXiv</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Quality filtering of LLM-generated training data</div>
+      <div class="authors"><strong>Yanhao Feng</strong>, Pengtao Xie</div>
+      <div class="venue">Manuscript in preparation.</div>
+    </div>
+  </section>
+
+  <footer>Last updated October 2026</footer>
+
+</main>
+</body>
+</html>
